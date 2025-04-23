@@ -992,38 +992,49 @@ section.speakers > h4 {
 /* Стилі 2-ї світлосірої секції */
 .new-light-gray-section2 {
   display: flex;
-  height: 359.11px;
+  min-height: 359.11px;
   width: 100%;
   background-color: #EAEAEA;
   position: relative; 
+  margin-top: -221px; /* <-- ДОДАТИ: Компенсує висоту контейнера оверлею */
+  padding-top: 24px;  /* <-- ДОДАТИ: Створює відступ 24px для вмісту */
+  box-sizing: border-box; /* <-- ДОДАТИ/ПЕРЕВІРИТИ: Щоб padding враховувався у висоту */
+  align-items: flex-start; /* Наприклад, вирівнювання по верху */
 }
+
+
 .get-hotsauge-update {
   width: 864px;
-  height:118px;
+  /*height:118px;<-- ВИДАЛИТИ: Нехай висота визначається контентом */
   display: flex;
   flex-direction: column;
-  align-items: left;
-  padding-left: 312px;
+  align-items: flex-start;
+  padding-top: 217.11px;
+  padding-right: 12px;
   padding-bottom: 24px;
+  padding-left: 312px;
+  box-sizing: border-box;
 }
 .get-hotsauge-update > h3 {
   text-transform: uppercase;
   padding-left: 12px;
   font-size: 47.27px;
-  width: 900;
+  font-weight: 900;
   color: #212529;
+  white-space: nowrap; /* <-- Додано: Забороняє перенос тексту */
+  margin: 0;
 }
 .get-hotsauge-update > p {
   font-size: 17.98px;
   padding-left: 12px;
-  width: 500;
+  font-weight: 500;
   color: #212529;
 }
 .new-light-gray-section2 > img {
   width: 408px;
-  height: 295.11px;
-  padding-left: 12px;
-  padding-bottom: 40px;
-  position: relative; 
+  height:  auto; /* 295.11px; */
+  /* padding-left: 12px;
+   padding-bottom: 40px;
+  position: relative; */ 
 }
 /* Кінецю 2-ї світлосірої секції */
