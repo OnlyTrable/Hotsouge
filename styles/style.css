@@ -1,0 +1,1029 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #212529;
+}
+
+/* ======================== styles of cookies ============================= */
+.cookies_banner {
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  padding: 20px 32px;
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 15px;
+  left: 0;
+}
+
+.cookies_info {
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+}
+
+.cookies_info > h4 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.cookies_info > p {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.cookie_policy {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.cookies_settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  width: 100%;
+}
+
+.cookies_settings > button {
+  background-color: #324fbe;
+  color: #fff;
+  padding: 14px 35px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cookies_settings > a {
+  color: #324fbe;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* ========================== end of cookies ============================= */
+/* ============================ styles of header ========================== */
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../assets/images/bg-intro-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 14.5% 17%;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  line-height: 33px;
+  position: relative;
+}
+
+header > h1 {
+  color: #212529;
+  font-size: 77px;
+  text-transform: uppercase;
+  line-height: 80px;
+  font-weight: 900;
+}
+
+header > nav {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #323232;
+  color: #fff;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+  gap: 40px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+header > nav > button {
+  background-color: #ff3c00;
+  color: #fff;
+  border: none;
+  padding: 20px 40px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.intro_container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro_container a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #212529;
+  color: #fff;
+  padding: 22px 36px;
+  max-width: 218px;
+  letter-spacing: 0.7px;
+  margin-top: 27px;
+}
+
+.intro_container p {
+  max-width: 816px;
+}
+
+.intro_container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.intro_container > div:first-child {
+  margin-top: 24px;
+}
+
+/* ============================ end of header ========================== */
+
+/* =========================== start of main =========================== */
+main {
+  position: relative;
+  height: auto;
+  weight: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* ============================= end of main =========================== */
+
+/* =========================== start of speakers ======================= */
+section.speakers > h4 {
+  /*position: relative; /* Додаємо position: relative, щоб можна було позиціонувати відносно нього */
+  height: 228px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 58.83px;
+  text-transform: uppercase;
+}
+.speaker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0; /* Переконайтеся, що немає відступу зверху за замовчуванням */
+}
+.speaker__name {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.speaker__title,
+.speaker__nick {
+  font-size: 1.3475rem;
+}
+.speaker__bio {
+  font-size: 0.9006rem;
+}
+.speaker__bio {
+  text-decoration: underline;
+}
+/* .speakers__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 52px; /* Додаємо проміжок 52px */
+} */
+.speaker__nick {
+  margin-bottom: 46px;
+  color: red;
+}
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.first-in-column-1 {
+  margin-top: 80px;
+}
+
+.first-in-column-2 {
+  margin-top: 155px;
+}
+
+.first-in-column-3 {
+  margin-top: 230px;
+}
+/* =========================== end of speakers ========================= */
+/* ============================ overlay-section ======================== */
+.outer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Змінено на 100% для кращої адаптивності */
+  /* height: 196px; */ /* Можливо, висота не потрібна, якщо контент її визначає */
+  margin-top: 98px; /* Додаємо відступ зверху, щоб компенсувати top: -98px в .overlay-section */
+  position: relative; /* Потрібно для позиціонування .overlay-section */
+}
+
+.overlay-section {
+  display: flex;
+  justify-content: space-between; /* Розміщує елементи по краях */
+  align-items: center; /* Вирівнює елементи по вертикалі */
+  position: absolute;
+  width: 1272px; /* Розгляньте max-width: 1272px; width: 90%; для адаптивності */
+  max-width: 90%; /* Приклад обмеження ширини для менших екранів */
+  height: 196px; /* Або auto, якщо висота залежить від контенту */
+  top: -196px; /* Піднімає блок */
+  border-radius: 16px;
+  background-image: url("../assets/images/cta-purple-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; /* Додатково для кращого відображення фону */
+  padding: 0 80px; /* Додано: 0 зверху/знизу, 80px зліва/справа */
+  box-sizing: border-box; /* Включає padding у розміри блоку */
+  z-index: 1;
+}
+
+.overlay-section > p {
+  text-transform: uppercase;
+  color: #fff;
+  padding: 30px 0; /* Залишено або скориговано вертикальний padding */
+  font-weight: 900;
+  font-size: 46.88px; /* Розгляньте використання rem/vw для адаптивності */
+  margin: 0; /* Забираємо відступи за замовчуванням */
+  max-width: 60%; */
+}
+
+.overlay-section > a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+  font-weight: 800;
+  font-size: 22.5px; /* Розгляньте використання rem/vw */
+  padding: 29.39px 49px; /* Внутрішній padding кнопки залишається */
+  white-space: nowrap; /* Запобігає переносу тексту */
+  text-align: center;
+}
+/* ============================ end of overlay-section ================= */
+/* ============================ Нова жовта секція ======================== */
+.new-yellow-section {
+  width: 1920px;
+  height: 1480px; /* 508px + 972px */
+  background-color: #FBDB3C; /* <--- ОСЬ ЦЕЙ РЯДОК */
+  display: flex;
+  justify-content: center;
+  /*align-items: flex-start;*/ /* Змінено на flex-start, щоб контент був зверху */
+  padding: 20px; /* Можна налаштувати або прибрати, якщо не потрібно */
+  box-sizing: border-box;
+}
+/* Оновлені стилі для обгортки верхньої частини */
+.yellow-section-top {
+  display: flex; /* Робимо контейнер гнучким */
+  flex-direction: row; /* Елементи всередині розташовуються горизонтально */
+  justify-content: space-between; /* Розсовує лівий блок і праве лого по краях */
+  align-items: center; /* Вирівнює їх по вертикалі */
+  width: 1272px; /* Встановлюємо ширину, як у квитків, для вирівнювання */
+  max-width: 100%; /* Дозволяє зменшуватись на менших екранах */
+  /* Можна додати відступи зверху/знизу, якщо потрібно */
+  /* margin-bottom: 50px; */
+}
+/* Нові стилі для лівого блоку (h3 + велике лого) */
+.top-left-content {
+  display: flex; /* Робимо контейнер гнучким */
+  flex-direction: column; /* Елементи всередині розташовуються вертикально */
+  align-items: flex-start; /* Вирівнюємо вміст по лівому краю */
+}
+
+.new-yellow-section .vertical-flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центруємо обидва блоки (верхній і квитки) по горизонталі */
+  justify-content: flex-start; /* Розташовуємо блоки зверху вниз */
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  gap: 50px; /* Додамо відступ між верхнім блоком та квитками */
+}
+
+/* Стилі для H3 */
+.new-yellow-section .vertical-flex-container h3 {
+  font-family: "Inter", sans-serif; /* Додано fallback шрифт */
+  font-weight: 900;
+  font-size: 49.8px; /* Розгляньте rem/vw для адаптивності */
+  line-height: 1.1; /* Краще використовувати безрозмірне значення */
+  letter-spacing: 0; /* 0% еквівалентно 0 або normal */
+  text-transform: uppercase;
+  text-align: center; /* Додано для центрування тексту */
+  margin: 0 0 30px 0; /* Додано відступ знизу */
+}
+
+/* Стилі для першого логотипу */
+.new-yellow-section .vertical-flex-container .hotsauce-logo-dark {
+  width: 708.66px; /* Округлено */
+  height: 173.73px; /* Округлено */
+  /* top/left ігноруються без position: absolute */
+  max-width: 100%; /* Важливо для адаптивності */
+  height: auto; /* Зберігає пропорції при зміні ширини */
+  margin-bottom: 20px; /* Додано відступ знизу */
+}
+
+/* Стилі для другого логотипу */
+.new-yellow-section .vertical-flex-container .logo-small {
+  width: 347px;
+  height: 348px;
+  /* top/left ігноруються без position: absolute */
+  max-width: 100%; /* Важливо для адаптивності */
+  height: auto; /* Зберігає пропорції при зміні ширини */
+}
+/* ============================ Кінець нової жовтої секції ================= */
+
+/* ============================ Ticket Styles ======================== */
+
+.tickets-container {
+  display: flex; /* Розташовуємо самі квитки */
+  flex-direction: column; /* Один під одним */
+  align-items: center; /* Центруємо квитки по горизонталі */
+  gap: 30px; /* Відстань між квитками */
+  margin-top: 50px; /* Відступ від логотипів зверху */
+  width: 100%; /* Займаємо доступну ширину */
+}
+
+.ticket-item {
+  display: flex; /* !!! ВАЖЛИВО: Робить дочірні елементи гнучкими */
+  flex-direction: row; /* !!! ВАЖЛИВО: Розташовує їх горизонтально */
+  align-items: stretch; /* Вирівнює елементи по висоті (або center, flex-start...) */
+  width: 1272px; /* Загальна ширина квитка (15 + 942 + 300 + 15) */
+  max-width: 100%; /* Щоб квиток міг зменшуватись на малих екранах */
+  height: 220px; /* Загальна висота квитка */
+  background-color: #fff; /* Білий фон для блоків всередині (якщо потрібно) */
+  overflow: hidden; /* Щоб внутрішні елементи не виходили за межі */
+}
+
+.ticket-edge {
+  width: 15px;
+  height: 220px;
+  flex-shrink: 0; /* Забороняємо зменшуватись */
+  object-fit: cover; /* Або contain, залежно від SVG */
+}
+.ticket-edge-before {
+   background-color: #FBDB3C; /* Білий фон, як ви вказували */
+}
+.ticket-edge-after {
+  background-color: #FBDB3C;
+}
+
+
+.ticket-block {
+  height: 100%; /* Займає всю висоту батьківського .ticket-item */
+  display: flex; /* Дозволяє використовувати flex властивості для внутрішнього контенту */
+  flex-direction: column; /* Або row, залежно від вмісту */
+  justify-content: center; /* Приклад вирівнювання */
+  align-items: center; /* Приклад вирівнювання */
+  position: relative; /* Потрібно для абсолютного позиціонування всередині */
+  box-sizing: border-box;
+}
+
+.ticket-block1 {
+  width: 942px;
+  background-color: #fff; /* Білий фон */
+  flex-shrink: 0;
+  /* padding: 53.25px 270px; */ /* Видалено padding */
+  height: 100%; /* Займає всю висоту */
+  position: relative; /* Залишається для позиціонування дочірніх */
+  box-sizing: border-box;
+}
+
+.ticket-block2 {
+  width: 300px;
+  background-color: #CCCCCC; /* Сірий фон */
+  flex-shrink: 0;
+  color: #fff; /* Колір тексту для "SOLD OUT" */
+  /* position: relative; */ /* Вже є у .ticket-block */
+}
+
+/* --- Стилі для вмісту всередині block1 --- */
+
+.ticket-price-container {
+  position: absolute; /* Позиціонування відносно .ticket-block1 */
+  width: 270px;
+  height: 150px; /* Або auto? */
+  top: 35px;
+  left: 0; /* Починається зліва */
+  border-right: 1px solid #EAEAEA; /* Вертикальна лінія */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px; /* Відступ від лінії */
+  box-sizing: border-box;
+}
+
+/* Стилізація лінії та кружечків */
+.ticket-price-container::before,
+.ticket-price-container::after {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: #EAEAEA; /* Колір кружечків */
+  border-radius: 50%; /* Робимо їх круглими */
+  left: calc(100% - 1px - 4.5px); /* Позиція: 100% ширини - товщина лінії - половина ширини кружечка */
+  /* left: 265.5px; */ /* Альтернатива, якщо ширина контейнера фіксована */
+}
+
+.ticket-price-container::before {
+  top: -4.5px; /* Позиція: половина висоти кружечка над верхнім краєм */
+  /* top: -5px; */ /* Як у вашому описі */
+}
+
+.ticket-price-container::after {
+  bottom: -4.5px; /* Позиція: половина висоти кружечка під нижнім краєм */
+  /* top: 146px; */ 
+}
+
+
+.ticket-price {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 54.61px;
+  line-height: 1.1; /* Краще безрозмірне значення */
+  /* vertical-align: middle; */ /* Не дуже релевантно тут */
+  margin: 0; /* Забираємо відступи за замовчуванням */
+  text-align: center;
+}
+
+.ticket-details {
+  position: absolute;
+  width: 308.25px;
+  height: 113.5px;
+  top: 53.25px;
+  left: 285px;
+  opacity: 0.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Змінено/Додано: Центрує вміст по вертикалі */
+  box-sizing: border-box;
+}
+
+.ticket-details p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18.13px;
+  line-height: 1.5; /* Або 1.65 для ~30px */
+  margin: 0;
+  padding: 5px 10px;
+  color: #fff; /* Тимчасово, бо інлайнові стилі задають інший колір */
+  display: inline-block;
+  width: auto;
+  border-radius: 4px;
+}
+
+/* Специфічні стилі для параграфів (можна додати класи в JS або використовувати :nth-child) */
+.ticket-details p:first-child {
+  font-size: 24.6px;
+}
+.ticket-details p:nth-child(2) {
+   font-size: 25px;
+   margin-bottom: 23.5px; /* !!! Додаємо відступ знизу для другого параграфа */
+}
+/* --- Стилі для вмісту всередині block2 --- */
+.sold-out-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 48.05px;
+  line-height: 1.05; /* Близько 50px */
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+}
+/* ============================ End Ticket Styles ======================== */
+/* ============================ верхні темні секції ======================== */
+/* Стилі для верхньої темної секції (оновлено згідно Figma) */
+.dark-section-top {
+  width: 1920px;
+  height: 897.53px;
+  background-color: #323232;
+  display: flex; /* Використовуємо flexbox для розміщення блоків */
+  align-items: flex-start; /* Вирівнюємо блоки по вертикалі відносно початку */
+  justify-content: space-between; /* Розміщуємо лівий та правий блоки з проміжком */
+  padding-top: 277.77px;
+  padding-bottom: 141.76px;
+  padding-left: 284px;
+  padding-right: 960px; /* Залишаємо, щоб звільнити місце справа */
+  box-sizing: border-box; /* Враховуємо padding у загальній ширині */
+  color: #fff; /* Колір тексту за замовчуванням */
+  position: relative; /* Для позиціонування дочірніх елементів */
+}
+
+.dark-section-top__left-block {
+  width: 676px;
+  height: 478px;
+  display: flex; /* Для вертикального вирівнювання h3 та абзаців */
+  flex-direction: column; /* Розташовуємо заголовок та абзаци вертикально */
+  justify-content: flex-start; /* Вирівнюємо вміст зверху */
+  margin-right: 40px; /* Проміжок між блоком з текстом та малюнком */
+}
+
+.dark-section-top__left-block h3 {
+  width: 359.97px;
+  height: auto; /* Висота визначається вмістом */
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 58.01px;
+  line-height: 60px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 20px; /* Додамо трохи відступу після заголовка */
+}
+
+.dark-section-top__left-block p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0.7rem; /* Невеликий відступ між абзацами */
+}
+
+.dark-section-top__right-block {
+  width: 596px; /* Оновлена ширина малюнка */
+  height: 697.53px; /* Оновлена висота малюнка */
+  position: absolute; /* Абсолютне позиціонування відносно .dark-section-top */
+  top: 160px; /* Відступ зверху */
+  right: calc(100% - 960px - 596px); /* Перерахований правий відступ */
+}
+
+.dark-section-top__right-block img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* ============================ Кінець верхніх темних секцій ================= */
+/* ============================ Нижні темні секції ======================== */
+.dark-section-bottom {
+  height: 889.75px;
+  background-color: #323232;
+  width: 100%;
+  display: flex; /* Використовуємо flexbox для розміщення блоків */
+  align-items: flex-start; /* Вирівнюємо блоки по вертикалі відносно початку */
+  justify-content: flex-start; /* Вирівнюємо блоки зліва направо */
+  position: relative; /* Для позиціонування дочірніх елементів */
+  padding-left: 324px; /* Відступ зліва для контейнера */
+  box-sizing: border-box; /* Враховуємо padding у загальній ширині */
+  color: #fff; /* Колір тексту за замовчуванням */
+}
+
+.dark-section-bottom__image-container {
+  width: 596px;
+  height: 713.75px;
+  position: absolute; /* Абсолютне позиціонування відносно .dark-section-bottom */
+  top: 0;
+  left: 324px;
+}
+
+.dark-section-bottom__image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.dark-section-bottom__text-container {
+  /* Відступ зліва вже задано для батьківського контейнера */
+  margin-left: 636px; /* Відступ справа від малюнка */
+  margin-top: 155.88px;
+  margin-right: 284px;
+  margin-bottom: 315.87px;
+  max-width: 676px; /* Обмежуємо ширину тексту */
+}
+
+.dark-section-bottom__text-container h3 {
+  width: 500.73px; /* Встановлюємо точну ширину */
+  height: 120px; /* Встановлюємо точну висоту */
+  font-family: Inter; /* Встановлюємо шрифт */
+  font-weight: 900; /* Встановлюємо жирність */
+  font-size: 56.37px; /* Встановлюємо розмір шрифту */
+  line-height: 60px; /* Встановлюємо висоту рядка */
+  letter-spacing: 0%; /* Встановлюємо міжбуквений інтервал */
+  vertical-align: middle; /* Вертикальне вирівнювання (може не мати видимого ефекту на блокових елементах) */
+  text-transform: uppercase; /* Перетворюємо текст на великі літери */
+  margin-top: 0; /* Забираємо стандартний відступ зверху */
+  margin-bottom: 1rem; /* Залишаємо відступ знизу */
+  margin-left: 40px;  Встановлюємо відступ зліва від контейнера тексту */
+  display: flex; /* Для коректного вертикального вирівнювання всередині блоку */
+  align-items: center; /* Вирівнюємо текст по вертикалі центру всередині h3 */
+}
+
+
+.dark-section-bottom__text-container p {
+  font-size: 1.1rem; /* Приблизний розмір, можеш змінити */
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  margin-left: 40px; /* Відступ справа від малюнка */
+}
+.dark-section-bottom__text-container p:first-child {
+  width: 594.48px; /* Встановлюємо точну ширину */
+  height: auto; /* Висота визначається вмістом, але не більше 50px за line-height */
+  font-family: Inter; /* Встановлюємо шрифт */
+  font-weight: 500; /* Встановлюємо жирність */
+  font-size: 18.13px; /* Встановлюємо розмір шрифту */
+  line-height: 30px; /* Встановлюємо висоту рядка */
+  letter-spacing: 0%; /* Встановлюємо міжбуквений інтервал */
+  vertical-align: middle; /* Вертикальне вирівнювання (може не мати видимого ефекту на блокових елементах) */
+  margin-top: 157px; /* Встановлюємо відступ зверху */
+  margin-left: 40px;  Встановлюємо відступ зліва від контейнера тексту */
+}
+/* ============================ Кінець нижніх темних секцій ================= */
+/* ============================ Світлосіра секція ======================== */
+.light-gray-section {
+  background-color: #EAEAEA; /* Оновлений світлосірий колір */
+  width: 100%; /* Займає всю ширину */
+  display: flex; /* Розташовуємо розділи вертикально */
+  flex-direction: column;
+  align-items: center; /* Центруємо дочірні елементи по горизонталі */
+}
+/* Стилі для першого розділу світлосірої секції */
+.light-gray-section__part-1 {
+  height: 228px;
+  width: 100%;
+  display: flex; /* Для центрування контейнера */
+  justify-content: center; /* Горизонтальне центрування */
+  align-items: flex-start; /* Вирівнюємо контейнер зверху */
+  box-sizing: border-box; /* Враховуємо відступ у висоті */
+}
+
+.light-gray-section__part-1-container {
+  width: 1180.95px; /* Заокругліть значення */
+  display: flex; /* Використовуємо flexbox для вертикального центрування */
+  justify-content: center; /* Центрування по горизонталі */
+  align-items: center; /* Центрування по вертикалі */
+  padding-top: 160px; /*- перенесено до контейнера */
+  padding-bottom: 8px;
+}
+/* Кінець стилів для першого розділу світлосірої секції */
+/* Стилі для другого розділу світлосірої секції */
+.light-gray-section__part-2 {
+  height: 564.11px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+} 
+
+.light-gray-section__part-2 > .part-2-block-1 { /* Використовуємо селектор прямих дочірніх елементів */
+  width: 648px;
+  height: 404.11px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin: 80px 3px 80px 312px;
+} 
+
+.light-gray-section__part-2 > .part-2-block-1 > img {
+  width: 624px;
+  height: 254.11px;
+  position: absolute;
+  top: 0;
+}
+
+.light-gray-section__part-2 > .part-2-block-1 >.text-container {
+  position: absolute;
+  bottom: 0;
+  width: 624px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.light-gray-section__part-2 > .part-2-block-1 >.text-container > h3 {
+  width: 464.31px;
+  font-family: Inter, sans-serif;
+  font-weight: 900;
+  font-size: 48.05px;
+  line-height: 50px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.light-gray-section__part-2 > .part-2-block-1 >.text-container > p {
+  width: 620.59px;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 18.13px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #323232;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.light-gray-section__part-2 > .part-2-block-2 {
+  width: 624px;
+  height: 374.39px;
+  margin-top: 80px;
+  margin-left: 3px;
+  object-fit: cover;
+}
+/* Кінець стилів для другого розділу світлосірої секції */
+/* Стилі для третьої частини світлосірої секції */
+.light-gray-section__part-3 {
+  height: 564.11px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.light-gray-section__part-3 > .part-3-block-1 {
+  width: 624px;
+  height: 374.39px;
+  margin-top: 80px;
+  margin-left: 312px;
+  margin-right: 12px; /* Відступ зліва для part-2-block-2 стає відступом справа для part-3-block-1 */
+  object-fit: cover;
+}
+
+.light-gray-section__part-3 > .part-3-block-2 {
+  width: 648px;
+  height: 404.11px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin: 80px 312px 80px 12px; /* Дзеркальні відступи для part-2-block-1 */
+}
+
+.light-gray-section__part-3 > .part-3-block-2 > img {
+  width: 624px;
+  height: 254.11px;
+  position: absolute;
+  top: 0;
+  left: 3px;
+}
+
+.light-gray-section__part-3 > .part-3-block-2 > .text-container {
+  position: absolute;
+  bottom: 0;
+  left: 3px;
+  width: 624px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.light-gray-section__part-3 > .part-3-block-2 > .text-container > h3 {
+  width: 624px;
+  font-family: Inter, sans-serif;
+  font-weight: 900;
+  font-size: 48.05px;
+  line-height: 50px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.light-gray-section__part-3 > .part-3-block-2 > .text-container > p {
+  width: 620.59px;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 18.13px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #323232;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Кінець стилів для третього розділу світлосірої секції */
+
+/* Стилі для другого розділу світлосірої секції */
+.light-gray-section__part-4 {
+  hheight: 674.11px;
+  width: 100%;/* Займає всю ширину батьківського контейнера */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+} 
+
+.light-gray-section__part-4 > .part-4-block-1 { /* Використовуємо селектор прямих дочірніх елементів */
+  width: 648px;
+  height: 404.11px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin: 80px 3px 80px 312px;
+} 
+
+.light-gray-section__part-4 > .part-4-block-1 > img {
+  width: 624px;
+  height: 254.11px;
+  position: absolute;
+  top: 0;
+}
+
+.light-gray-section__part-4 > .part-4-block-1 >.text-container {
+  position: absolute;
+  bottom: 0;
+  width: 624px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.light-gray-section__part-4 > .part-4-block-1 >.text-container > h3 {
+  width: 488.4px;
+  font-family: Inter, sans-serif;
+  font-weight: 900;
+  font-size: 48.05px;
+  line-height: 50px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.light-gray-section__part-4 > .part-4-block-1 >.text-container > p {
+  width: 620.59px;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 18.13px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  color: #323232;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.light-gray-section__part-4 > .part-4-block-2 {
+  width: 624px;
+  height: 374.39px;
+  margin-top: 80px;
+  margin-left: 3px;
+  object-fit: cover;
+}
+/* Кінець стилів для другого розділу світлосірої секції
+/* ============================ Кінець світлосірої секції ================= */
+/* Стилі для нової верхньої чорної секції */
+.new-black-section-top {
+  height: 920.33px;
+  width: 100%;
+  background-color: #323232;
+  position: relative; /* це потрібно додати */
+}
+.new-black-section-top .black-section-top-container {
+  width: 1320px;
+  height: 600.33px;
+  position: absolute;
+  top: 160px; /* Залишаємо верхній відступ */
+  left: 300px; /* Позиціонуємо контейнер на 300px зліва */
+}
+
+.new-black-section-top .black-section-top-container .top-block h3 {
+  width: 579.62px;
+  height: 120px;
+  font-family: Inter, sans-serif;
+  font-weight: 900;
+  font-size: 58.13px;
+  line-height: 60px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-left: 370.28px;
+  color: #FFFFFF;
+}
+.new-black-section-top .black-section-top-container .bottom-block {
+  display: flex; /* Робить нижній блок горизонтальним flex-контейнером */
+  justify-content: center; /* Розміщує елементи з рівними проміжками */
+  align-items: flex-start; /* Вирівнює елементи по верхньому краю */
+  width: 100%;
+}
+/* Кінець стилів для нової верхньої чорної секції */
+/* Стилі для нової нижньої чорної секції */
+.new-black-section-bottom {
+  height: 109.5px;
+  width: 100%;
+  background-color: #323232;
+}
+/* Кінець стилів для нової нижньої чорної секції */
+/* Стилі для нової нижньої світлосірої секції*/
+.new-light-gray-section {
+  width: 100%;
+  background-color: #EAEAEA;
+}
+.light-gray-section__part-1-container {
+  height: 221px;
+  display: flex;
+  width: 100%; /* Змінено на 100% для кращої адаптивності */
+  margin-top: 110.5px; /* Додаємо відступ зверху, щоб компенсувати top: 110.5px в .overlay-section */
+  position: relative; 
+}
+.block-1-orange-overlay {
+  display: flex;
+  justify-content: space-between; /* Розміщує елементи по краях */
+  align-items: center; /* Вирівнює елементи по вертикалі */
+  position: absolute;
+  width: 1272px; /* Розгляньте max-width: 1272px; width: 90%; для адаптивності */
+  max-width: 90%; /* Приклад обмеження ширини для менших екранів */
+  height: 221px; /* Або auto, якщо висота залежить від контенту */
+  top: -221px; /* Піднімає блок */
+  border-radius: 16px;
+  background-image: url("../assets/images/cta-yellow-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0px 80px 0px 68px; /* Додано: 0 зверху/знизу, 68px зліва/справа */
+  box-sizing: border-box; /* Включає padding у розміри блоку */
+  z-index: 1;
+}
+.infoblock {
+  width: 662.66px;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Розміщує елементи по краях */
+  align-items: flex-start; /* Вирівнює елементи по вертикалі */
+  color: #000;
+  max-width: 60%;
+}
+.infoblock > h4 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 25.84px; /* Розгляньте використання rem/vw для адаптивності */
+}
+.infoblock > p {
+  font-weight: 500;
+  font-size: 18.13px; /* Розгляньте використання rem/vw для адаптивності */
+}
+.block-1-orange-overlay > a {
+  height: 52.39px;
+  weight: 217.52px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #000;
+  background-color: #fff;
+  font-weight: 800;
+  font-size: 15px; /* Розгляньте використання rem/vw */
+  padding: 18.39px 31.19px; /* Внутрішній padding кнопки залишається */
+  text-align: center;
+}
+/* Кінець стилів для нової нижньої світлосірої секції*/
+/* Стилі 2-ї світлосірої секції */
+.new-light-gray-section2 {
+  display: flex;
+  height: 359.11px;
+  width: 100%;
+  background-color: #EAEAEA;
+  position: relative; 
+}
+.get-hotsauge-update {
+  width: 864px;
+  height:118px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-left: 312px;
+  padding-bottom: 24px;
+}
+.get-hotsauge-update > h3 {
+  text-transform: uppercase;
+  padding-left: 12px;
+  font-size: 47.27px;
+  width: 900;
+  color: #212529;
+}
+.get-hotsauge-update > p {
+  font-size: 17.98px;
+  padding-left: 12px;
+  width: 500;
+  color: #212529;
+}
+.new-light-gray-section2 > img {
+  width: 408px;
+  height: 295.11px;
+  padding-left: 12px;
+  padding-bottom: 40px;
+  position: relative; 
+}
+/* Кінецю 2-ї світлосірої секції */
