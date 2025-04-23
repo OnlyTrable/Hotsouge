@@ -1001,8 +1001,6 @@ section.speakers > h4 {
   box-sizing: border-box; /* <-- ДОДАТИ/ПЕРЕВІРИТИ: Щоб padding враховувався у висоту */
   align-items: flex-start; /* Наприклад, вирівнювання по верху */
 }
-
-
 .get-hotsauge-update {
   width: 864px;
   /*height:118px;<-- ВИДАЛИТИ: Нехай висота визначається контентом */
@@ -1012,7 +1010,7 @@ section.speakers > h4 {
   padding-top: 217.11px;
   padding-right: 12px;
   padding-bottom: 24px;
-  padding-left: 312px;
+  margin-left: 312px;
   box-sizing: border-box;
 }
 .get-hotsauge-update > h3 {
@@ -1038,3 +1036,132 @@ section.speakers > h4 {
   position: relative; */ 
 }
 /* Кінецю 2-ї світлосірої секції */
+/* --- Стилі для форми реєстрації в new-light-gray-section3 --- */
+
+.new-light-gray-section3 {
+  width: 100%;
+  min-height: 449px;
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 24px; /* Відступ 24px від попередньої секції */
+  padding-bottom: 160px;
+  box-sizing: border-box;
+}
+
+.registration-form {
+  max-width: 1272px; /* Загальна максимальна ширина */
+  width: 100%;
+  /*margin-left: 324px; /* !!! ЗАЛИШАЄМО ЛІВИЙ ВІДСТУП для вирівнювання */
+  /*margin-right: 324px; /* !!! ЗАЛИШАЄМО ПРАВИЙ ВІДСТУП для симетрії */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Вирівнюємо всі дочірні елементи (рядок, чекбокс, кнопку) по лівому краю */
+  gap: 16px; /* Відстань між рядком полів, чекбоксом та кнопкою */
+}
+
+/* Новий контейнер для горизонтальних полів */
+.form-row {
+  display: flex;
+  flex-direction: row; /* Поля в ряд */
+  gap: 16px; /* Відстань між полями */
+  width: 100%; /* Займає всю ширину всередині .registration-form */
+}
+
+/* Стилі для груп полів всередині рядка */
+.form-row .form-group {
+  flex: 1; /* Дозволяє полям рівномірно займати простір */
+  display: flex;
+  flex-direction: column; /* Лейбл над інпутом */
+  margin-bottom: 0; /* Забираємо нижній відступ, бо є gap у .form-row та .registration-form */
+}
+
+/* Загальні стилі для всіх груп (включаючи чекбокс) */
+.form-group {
+   /* Залишаємо тільки стилі для лейбла/інпута всередині */
+}
+
+.form-group label {
+  color: #212529;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.form-group label .required {
+  color: red;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  background-color: #FFFFFF;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 12px 15px;
+  font-size: 16px;
+  width: 100%; /* Інпут займає всю ширину своєї .form-group */
+  box-sizing: border-box;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 60px;
+  /* margin-bottom: 18px; */ /* Замінено на gap у .registration-form */
+  width: 100%; /* Щоб зайняти ширину і вирівнятись по лівому краю */
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  border: 1px solid #ccc;
+  flex-shrink: 0;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+}
+
+.checkbox-group input[type="checkbox"]:checked::before {
+    content: '✔';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #212529;
+}
+
+.checkbox-group label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #212529;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #212529;
+  color: #FFFFFF;
+  width: 197px;
+  height: 65px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  /* align-self: flex-start; */ /* Вже вирівняно через align-items: flex-start у батька */
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #424649;
+}
+
+/* --- Кінець стилів для форми реєстрації --- */
