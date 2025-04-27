@@ -1003,7 +1003,6 @@ section.speakers > h4 {
 }
 .get-hotsauge-update {
   width: 864px;
-  /*height:118px;<-- ВИДАЛИТИ: Нехай висота визначається контентом */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1031,9 +1030,6 @@ section.speakers > h4 {
 .new-light-gray-section2 > img {
   width: 408px;
   height:  auto; /* 295.11px; */
-  /* padding-left: 12px;
-   padding-bottom: 40px;
-  position: relative; */ 
 }
 /* Кінецю 2-ї світлосірої секції */
 /* --- Стилі для форми реєстрації в new-light-gray-section3 --- */
@@ -1053,8 +1049,6 @@ section.speakers > h4 {
 .registration-form {
   max-width: 1272px; /* Загальна максимальна ширина */
   width: 100%;
-  /*margin-left: 324px; /* !!! ЗАЛИШАЄМО ЛІВИЙ ВІДСТУП для вирівнювання */
-  /*margin-right: 324px; /* !!! ЗАЛИШАЄМО ПРАВИЙ ВІДСТУП для симетрії */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -1110,7 +1104,6 @@ section.speakers > h4 {
   align-items: center;
   gap: 12px;
   min-height: 60px;
-  /* margin-bottom: 18px; */ /* Замінено на gap у .registration-form */
   width: 100%; /* Щоб зайняти ширину і вирівнятись по лівому краю */
 }
 
@@ -1165,3 +1158,142 @@ section.speakers > h4 {
 }
 
 /* --- Кінець стилів для форми реєстрації --- */
+/**/
+.youtube-full-section {
+  display: flex; /* Використовуємо flexbox */
+  flex-direction: column; /* Розташовуємо елементи вертикально */
+  width: 100%; /* Займаємо всю доступну ширину */
+  background-color: #323232; /* Колір фону секції */
+}
+
+.youtube-player-container {
+  width: 1272px; /* Оновлена ширина фрейму */
+  height: 716px; /* Оновлена висота фрейму */
+  margin: 160px auto 80px auto; /* Відступи зверху, знизу та центрування по горизонталі */
+  display: flex; /* Для центрування iframe всередині контейнера */
+  justify-content: center; /* Центрування по горизонталі */
+  align-items: center; /* Центрування по вертикалі */
+}
+
+.youtube-player-container iframe {
+  width: 100%; /* Займає всю ширину батьківського контейнера */
+  height: 100%; /* Займає всю висоту батьківського контейнера */
+  border: none; /* Прибираємо стандартну рамку iframe */
+}
+.youtube-info-container {
+  display: flex;
+  /*flex-direction: column; /* Розташовуємо елементи вертикально */
+  justify-content: center; /* Центруємо вміст по вертикалі */
+  align-items: flex-start; /* Вирівнюємо вміст по лівому краю */
+  padding: 24px 152px 256.39px 284px; /* Додаємо відступи навколо вмісту */
+}
+.info-text-container {
+  /* Стилі для контейнера з заголовком та параграфом, якщо потрібно */
+  margin-bottom: 20px; /* Додамо відступ між текстом та кнопкою */
+}
+/*.youtube-info-container h3 {
+  width: 580.26px;
+  height: 101px;
+  top: -1px;
+  left: 40px;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+}*/
+.youtube-info-container h3 {
+  width: 580.26px;
+  /* height: 101px; */ /* Закоментуємо фіксовану висоту */
+  /* top: -1px;
+  left: 40px; */ /* Закоментуємо абсолютне позиціонування */
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0; /* Заберемо стандартні відступи h3 */
+}
+/*.youtube-info-container p {
+  width: 687.31px;
+  height: 80px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  margin: 153px 61,35px 5px 40px;
+  color: #FFFFFF;
+}*/
+.youtube-info-container p {
+  width: 687.31px;
+  /* height: 80px; */ /* Закоментуємо фіксовану висоту */
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  margin: 20px 0 0 0; /* Змінимо відступи параграфа */
+  color: #FFFFFF;
+}
+/* .map-button-container {
+  width: 370.66px;
+  height: 334.39px;
+  background-color: #262626;
+  border-radius: 20px;
+  margin-top: 24px; /* Відступ зверху */
+  display: flex;
+  /*flex-direction: column; /* Розташовуємо адресу та кнопку вертикально */
+  /*justify-content: center; /* Центруємо вміст по вертикалі */
+  /*align-items: center; /* Центруємо вміст по горизонталі */
+  /*color: #FFFFFF; /* Білий колір тексту за замовчуванням */
+  /*text-align: center; /* Центруємо текст всередині контейнера */
+/*} */
+.map-button-container {
+  width: 370.66px;
+  height: 334.39px;
+  background-color: #262626;
+  border-radius: 20px;
+  /*padding-left: 152,68px; /* Заберемо відступ, тепер контролюється через youtube-info-container */
+  display: flex;
+  flex-direction: column; /* Розташовуємо адресу та кнопку вертикально */
+  justify-content: center; /* Центруємо вміст по вертикалі */
+  align-items: center; /* Центруємо вміст по горизонталі */
+  color: #FFFFFF; /* Білий колір тексту за замовчуванням */
+  text-align: center; /* Центруємо текст всередині контейнера */
+}
+
+.map-button-container .address {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 37px; /* Відступ між адресою та кнопкою */
+}
+.map-button-container .view-map-button {
+  color: #323232;
+  background-color: #FFFFFF;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 15px 30px; /* Відступи всередині кнопки */
+}
+
+.map-button-container .view-map-button:hover {
+  /* Додайте стилі для наведення курсора, якщо потрібно */
+  background-color: #f0f0f0;
+}
+/*____________________________________________________________________*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.map-button-container .view-map-button:hover {
+  background-color: #f0f0f0;
+}
