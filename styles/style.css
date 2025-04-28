@@ -162,7 +162,7 @@ header > nav > button {
 main {
   position: relative;
   height: auto;
-  weight: auto;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -196,16 +196,8 @@ section.speakers > h4 {
 }
 .speaker__bio {
   font-size: 0.9006rem;
-}
-.speaker__bio {
   text-decoration: underline;
 }
-/* .speakers__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 52px; /* Додаємо проміжок 52px */
-} */
 .speaker__nick {
   margin-bottom: 46px;
   color: red;
@@ -264,7 +256,7 @@ section.speakers > h4 {
   font-weight: 900;
   font-size: 46.88px; /* Розгляньте використання rem/vw для адаптивності */
   margin: 0; /* Забираємо відступи за замовчуванням */
-  max-width: 60%; */
+  max-width: 60%;
 }
 
 .overlay-section > a {
@@ -283,7 +275,7 @@ section.speakers > h4 {
 .new-yellow-section {
   width: 1920px;
   height: 1480px; /* 508px + 972px */
-  background-color: #FBDB3C; /* <--- ОСЬ ЦЕЙ РЯДОК */
+  background-color: #fbdb3c; /* <--- ОСЬ ЦЕЙ РЯДОК */
   display: flex;
   justify-content: center;
   /*align-items: flex-start;*/ /* Змінено на flex-start, щоб контент був зверху */
@@ -382,12 +374,11 @@ section.speakers > h4 {
   object-fit: cover; /* Або contain, залежно від SVG */
 }
 .ticket-edge-before {
-   background-color: #FBDB3C; /* Білий фон, як ви вказували */
+  background-color: #fbdb3c; /* Білий фон, як ви вказували */
 }
 .ticket-edge-after {
-  background-color: #FBDB3C;
+  background-color: #fbdb3c;
 }
-
 
 .ticket-block {
   height: 100%; /* Займає всю висоту батьківського .ticket-item */
@@ -411,7 +402,7 @@ section.speakers > h4 {
 
 .ticket-block2 {
   width: 300px;
-  background-color: #CCCCCC; /* Сірий фон */
+  background-color: #cccccc; /* Сірий фон */
   flex-shrink: 0;
   color: #fff; /* Колір тексту для "SOLD OUT" */
   /* position: relative; */ /* Вже є у .ticket-block */
@@ -425,7 +416,7 @@ section.speakers > h4 {
   height: 150px; /* Або auto? */
   top: 35px;
   left: 0; /* Починається зліва */
-  border-right: 1px solid #EAEAEA; /* Вертикальна лінія */
+  border-right: 1px solid #eaeaea; /* Вертикальна лінія */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -436,13 +427,15 @@ section.speakers > h4 {
 /* Стилізація лінії та кружечків */
 .ticket-price-container::before,
 .ticket-price-container::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 9px;
   height: 9px;
-  background: #EAEAEA; /* Колір кружечків */
+  background: #eaeaea; /* Колір кружечків */
   border-radius: 50%; /* Робимо їх круглими */
-  left: calc(100% - 1px - 4.5px); /* Позиція: 100% ширини - товщина лінії - половина ширини кружечка */
+  left: calc(
+    100% - 1px - 4.5px
+  ); /* Позиція: 100% ширини - товщина лінії - половина ширини кружечка */
   /* left: 265.5px; */ /* Альтернатива, якщо ширина контейнера фіксована */
 }
 
@@ -453,9 +446,8 @@ section.speakers > h4 {
 
 .ticket-price-container::after {
   bottom: -4.5px; /* Позиція: половина висоти кружечка під нижнім краєм */
-  /* top: 146px; */ 
+  /* top: 146px; */
 }
-
 
 .ticket-price {
   font-family: "Inter", sans-serif;
@@ -498,8 +490,8 @@ section.speakers > h4 {
   font-size: 24.6px;
 }
 .ticket-details p:nth-child(2) {
-   font-size: 25px;
-   margin-bottom: 23.5px; /* !!! Додаємо відступ знизу для другого параграфа */
+  font-size: 25px;
+  margin-bottom: 23.5px; /* !!! Додаємо відступ знизу для другого параграфа */
 }
 /* --- Стилі для вмісту всередині block2 --- */
 .sold-out-text {
@@ -509,7 +501,7 @@ section.speakers > h4 {
   line-height: 1.05; /* Близько 50px */
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
 }
 /* ============================ End Ticket Styles ======================== */
@@ -622,11 +614,10 @@ section.speakers > h4 {
   text-transform: uppercase; /* Перетворюємо текст на великі літери */
   margin-top: 0; /* Забираємо стандартний відступ зверху */
   margin-bottom: 1rem; /* Залишаємо відступ знизу */
-  margin-left: 40px;  Встановлюємо відступ зліва від контейнера тексту */
+  margin-left: 40px; /* Встановлюємо відступ зліва від контейнера тексту */
   display: flex; /* Для коректного вертикального вирівнювання всередині блоку */
   align-items: center; /* Вирівнюємо текст по вертикалі центру всередині h3 */
 }
-
 
 .dark-section-bottom__text-container p {
   font-size: 1.1rem; /* Приблизний розмір, можеш змінити */
@@ -644,12 +635,12 @@ section.speakers > h4 {
   letter-spacing: 0%; /* Встановлюємо міжбуквений інтервал */
   vertical-align: middle; /* Вертикальне вирівнювання (може не мати видимого ефекту на блокових елементах) */
   margin-top: 157px; /* Встановлюємо відступ зверху */
-  margin-left: 40px;  Встановлюємо відступ зліва від контейнера тексту */
+  margin-left: 40px; /* Встановлюємо відступ зліва від контейнера тексту */
 }
 /* ============================ Кінець нижніх темних секцій ================= */
 /* ============================ Світлосіра секція ======================== */
 .light-gray-section {
-  background-color: #EAEAEA; /* Оновлений світлосірий колір */
+  background-color: #eaeaea; /* Оновлений світлосірий колір */
   width: 100%; /* Займає всю ширину */
   display: flex; /* Розташовуємо розділи вертикально */
   flex-direction: column;
@@ -670,7 +661,7 @@ section.speakers > h4 {
   display: flex; /* Використовуємо flexbox для вертикального центрування */
   justify-content: center; /* Центрування по горизонталі */
   align-items: center; /* Центрування по вертикалі */
-  padding-top: 160px; /*- перенесено до контейнера */
+  padding-top: 160px; /* перенесено до контейнера */
   padding-bottom: 8px;
 }
 /* Кінець стилів для першого розділу світлосірої секції */
@@ -682,16 +673,17 @@ section.speakers > h4 {
   align-items: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-} 
+}
 
-.light-gray-section__part-2 > .part-2-block-1 { /* Використовуємо селектор прямих дочірніх елементів */
+.light-gray-section__part-2 > .part-2-block-1 {
+  /* Використовуємо селектор прямих дочірніх елементів */
   width: 648px;
   height: 404.11px;
   position: relative;
   display: flex;
   align-items: flex-start;
   margin: 80px 3px 80px 312px;
-} 
+}
 
 .light-gray-section__part-2 > .part-2-block-1 > img {
   width: 624px;
@@ -700,7 +692,7 @@ section.speakers > h4 {
   top: 0;
 }
 
-.light-gray-section__part-2 > .part-2-block-1 >.text-container {
+.light-gray-section__part-2 > .part-2-block-1 > .text-container {
   position: absolute;
   bottom: 0;
   width: 624px;
@@ -708,7 +700,7 @@ section.speakers > h4 {
   box-sizing: border-box;
 }
 
-.light-gray-section__part-2 > .part-2-block-1 >.text-container > h3 {
+.light-gray-section__part-2 > .part-2-block-1 > .text-container > h3 {
   width: 464.31px;
   font-family: Inter, sans-serif;
   font-weight: 900;
@@ -721,7 +713,7 @@ section.speakers > h4 {
   margin-bottom: 10px;
 }
 
-.light-gray-section__part-2 > .part-2-block-1 >.text-container > p {
+.light-gray-section__part-2 > .part-2-block-1 > .text-container > p {
   width: 620.59px;
   font-family: Inter, sans-serif;
   font-weight: 500;
@@ -816,22 +808,23 @@ section.speakers > h4 {
 
 /* Стилі для другого розділу світлосірої секції */
 .light-gray-section__part-4 {
-  hheight: 674.11px;
-  width: 100%;/* Займає всю ширину батьківського контейнера */
+  height: 674.11px;
+  width: 100%; /* Займає всю ширину батьківського контейнера */
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   box-sizing: border-box;
-} 
+}
 
-.light-gray-section__part-4 > .part-4-block-1 { /* Використовуємо селектор прямих дочірніх елементів */
+.light-gray-section__part-4 > .part-4-block-1 {
+  /* Використовуємо селектор прямих дочірніх елементів */
   width: 648px;
   height: 404.11px;
   position: relative;
   display: flex;
   align-items: flex-start;
   margin: 80px 3px 80px 312px;
-} 
+}
 
 .light-gray-section__part-4 > .part-4-block-1 > img {
   width: 624px;
@@ -840,7 +833,7 @@ section.speakers > h4 {
   top: 0;
 }
 
-.light-gray-section__part-4 > .part-4-block-1 >.text-container {
+.light-gray-section__part-4 > .part-4-block-1 > .text-container {
   position: absolute;
   bottom: 0;
   width: 624px;
@@ -848,7 +841,7 @@ section.speakers > h4 {
   box-sizing: border-box;
 }
 
-.light-gray-section__part-4 > .part-4-block-1 >.text-container > h3 {
+.light-gray-section__part-4 > .part-4-block-1 > .text-container > h3 {
   width: 488.4px;
   font-family: Inter, sans-serif;
   font-weight: 900;
@@ -861,7 +854,7 @@ section.speakers > h4 {
   margin-bottom: 10px;
 }
 
-.light-gray-section__part-4 > .part-4-block-1 >.text-container > p {
+.light-gray-section__part-4 > .part-4-block-1 > .text-container > p {
   width: 620.59px;
   font-family: Inter, sans-serif;
   font-weight: 500;
@@ -911,7 +904,7 @@ section.speakers > h4 {
   text-transform: uppercase;
   margin-top: 0;
   margin-left: 370.28px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .new-black-section-top .black-section-top-container .bottom-block {
   display: flex; /* Робить нижній блок горизонтальним flex-контейнером */
@@ -930,14 +923,14 @@ section.speakers > h4 {
 /* Стилі для нової нижньої світлосірої секції*/
 .new-light-gray-section {
   width: 100%;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 }
 .light-gray-section__part-1-container {
   height: 221px;
   display: flex;
   width: 100%; /* Змінено на 100% для кращої адаптивності */
   margin-top: 110.5px; /* Додаємо відступ зверху, щоб компенсувати top: 110.5px в .overlay-section */
-  position: relative; 
+  position: relative;
 }
 .block-1-orange-overlay {
   display: flex;
@@ -977,7 +970,7 @@ section.speakers > h4 {
 }
 .block-1-orange-overlay > a {
   height: 52.39px;
-  weight: 217.52px;
+  width: 217.52px;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -994,10 +987,10 @@ section.speakers > h4 {
   display: flex;
   min-height: 359.11px;
   width: 100%;
-  background-color: #EAEAEA;
-  position: relative; 
+  background-color: #eaeaea;
+  position: relative;
   margin-top: -221px; /* <-- ДОДАТИ: Компенсує висоту контейнера оверлею */
-  padding-top: 24px;  /* <-- ДОДАТИ: Створює відступ 24px для вмісту */
+  padding-top: 24px; /* <-- ДОДАТИ: Створює відступ 24px для вмісту */
   box-sizing: border-box; /* <-- ДОДАТИ/ПЕРЕВІРИТИ: Щоб padding враховувався у висоту */
   align-items: flex-start; /* Наприклад, вирівнювання по верху */
 }
@@ -1029,7 +1022,7 @@ section.speakers > h4 {
 }
 .new-light-gray-section2 > img {
   width: 408px;
-  height:  auto; /* 295.11px; */
+  height: auto; /* 295.11px; */
 }
 /* Кінецю 2-ї світлосірої секції */
 /* --- Стилі для форми реєстрації в new-light-gray-section3 --- */
@@ -1037,7 +1030,7 @@ section.speakers > h4 {
 .new-light-gray-section3 {
   width: 100%;
   min-height: 449px;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -1072,11 +1065,6 @@ section.speakers > h4 {
   margin-bottom: 0; /* Забираємо нижній відступ, бо є gap у .form-row та .registration-form */
 }
 
-/* Загальні стилі для всіх груп (включаючи чекбокс) */
-.form-group {
-   /* Залишаємо тільки стилі для лейбла/інпута всередині */
-}
-
 .form-group label {
   color: #212529;
   margin-bottom: 8px;
@@ -1090,7 +1078,7 @@ section.speakers > h4 {
 
 .form-group input[type="text"],
 .form-group input[type="email"] {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 12px 15px;
@@ -1111,7 +1099,7 @@ section.speakers > h4 {
   width: 22px;
   height: 22px;
   border-radius: 5px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 1px solid #ccc;
   flex-shrink: 0;
   cursor: pointer;
@@ -1122,13 +1110,13 @@ section.speakers > h4 {
 }
 
 .checkbox-group input[type="checkbox"]:checked::before {
-    content: '✔';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 16px;
-    color: #212529;
+  content: "✔";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: #212529;
 }
 
 .checkbox-group label {
@@ -1141,7 +1129,7 @@ section.speakers > h4 {
 
 .submit-button {
   background-color: #212529;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 197px;
   height: 65px;
   border: none;
@@ -1166,28 +1154,33 @@ section.speakers > h4 {
 }
 
 .youtube-player-container {
-  width: 1272px; /* Оновлена ширина фрейму */
-  height: 716px; /* Оновлена висота фрейму */
-  margin: 160px auto 80px auto; /* Відступи зверху, знизу та центрування по горизонталі */
+  width: 100%; /* Оновлена ширина фрейму */
+  height: 955.5px; /* Оновлена висота фрейму */
   display: flex; /* Для центрування iframe всередині контейнера */
   justify-content: center; /* Центрування по горизонталі */
   align-items: center; /* Центрування по вертикалі */
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
-.youtube-player-container iframe {
-  width: 100%; /* Займає всю ширину батьківського контейнера */
-  height: 100%; /* Займає всю висоту батьківського контейнера */
+.youtube-player-container > iframe {
+  width: 1272px; /* Займає всю ширину батьківського контейнера */
+  height: 716px; /* Займає всю висоту батьківського контейнера */
   border: none; /* Прибираємо стандартну рамку iframe */
 }
+
 .youtube-info-container {
   display: flex;
-  justify-content: center; /* Центруємо вміст по вертикалі */
+  justify-content: flex-start; /* Вирівнюємо вміст по верхньому краю */
   align-items: flex-start; /* Вирівнюємо вміст по лівому краю */
-  padding: 24px 152px 256.39px 284px; /* Додаємо відступи навколо вмісту */
 }
+
 .info-text-container {
-  /* Стилі для контейнера з заголовком та параграфом, якщо потрібно */
-  margin-bottom: 20px; /* Додамо відступ між текстом та кнопкою */
+  width: 788.66px;
+  height: 238px;
+  margin: 24px 152px 256.39px 284px; /* Додаємо відступи навколо вмісту */
+  padding-left: 40px;
+  padding-bottom: 256.39px;
 }
 
 .youtube-info-container h3 {
@@ -1196,66 +1189,141 @@ section.speakers > h4 {
   font-size: 25px;
   line-height: 50px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0; /* Заберемо стандартні відступи h3 */
 }
 
-.youtube-info-container p {
+.info-text-container > p {
+  /* Стилізуємо параграф лише всередині .info-text-container */
   width: 687.31px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 500;
-  margin: 20px 0 0 0; /* Змінимо відступи параграфа */
-  color: #FFFFFF;
+  margin: 20px 0 0 0;
+  color: #ffffff;
 }
 
 .map-button-container {
+  position: relative; /* Робимо контейнер відносним, щоб ми могли позиціонувати iframe абсолютно */
   width: 370.66px;
   height: 334.39px;
   background-color: #262626;
   border-radius: 20px;
   display: flex;
-  flex-direction: column; /* Розташовуємо адресу та кнопку вертикально */
-  justify-content: center; /* Центруємо вміст по вертикалі */
-  align-items: center; /* Центруємо вміст по горизонталі */
-  color: #FFFFFF; /* Білий колір тексту за замовчуванням */
-  text-align: center; /* Центруємо текст всередині контейнера */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
 }
 
 .map-button-container .address {
   font-size: 18px;
   line-height: 1.5;
   font-weight: 500;
-  margin-bottom: 37px; /* Відступ між адресою та кнопкою */
+  text-align: left;
+  margin-bottom: 37px;
 }
+
 .map-button-container .view-map-button {
   color: #323232;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
-  padding: 15px 30px; /* Відступи всередині кнопки */
+  padding: 15px 30px;
 }
 
 .map-button-container .view-map-button:hover {
   /* Додайте стилі для наведення курсора, якщо потрібно */
   background-color: #f0f0f0;
 }
-/*____________________________________________________________________*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.map-button-container .view-map-button:hover {
-  background-color: #f0f0f0;
+.map-button-container .map-iframe {
+  position: absolute; /* Абсолютно позиціонуємо iframe */
+  top: 100%; /* Розміщуємо відразу під кнопкою */
+  left: 0;
+  width: 600px; /* Розміри iframe */
+  height: 450px;
+  border: 0;
+  z-index: 10; /* Переконуємось, що iframe зверху над іншими елементами */
+  display: none; /* Спочатку приховуємо iframe */
 }
+
+.map-button-container:hover .map-iframe {
+  display: block; /* Показуємо iframe при наведенні на контейнер */
+}
+
+/*____________________________________________________________________*/
+/* _____________ partners-section _________*/
+.partners-section {
+  width: 1920px;
+  height: 1037.25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центруємо блоки по горизонталі */
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+/* Top Block */
+.partners-top-block {
+  width: 1296px;
+  height: 427.77px;
+  border-bottom: 2px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Центруємо вміст по вертикалі */
+  align-items: center; /* Центруємо вміст по горизонталі */
+  margin-top: 160px; /* Додамо верхній відступ, якщо блок не є першим у секції */
+  margin-bottom: 48px; /* Додамо верхній відступ, якщо блок не є першим у секції */
+  margin-left: auto;
+  margin-right: auto; /* Центруємо блок по горизонталі */
+}
+
+.partners-intro-text {
+  font-family: Inter, sans-serif; /* Додано запасний шрифт */
+  font-weight: 900;
+  font-size: 57.89px;
+  line-height: 60px;
+  letter-spacing: 0%; /* Зазвичай це значення за замовчуванням, але для точності можна вказати */
+  text-align: center;
+  vertical-align: middle; /* Ця властивість працює для inline або table-cell елементів */
+  text-transform: uppercase;
+  color: #212529; /* Колір тексту */
+}
+.partner-link {
+  margin-top: 88px;
+  margin-bottom: 48px;
+}
+.partners-link {
+  margin-top: 0px;
+  margin-bottom: 16.3px;
+}
+.partner-link img {
+  width: 420px;
+  height: 213.77px;
+}
+/* Bottom Block */
+.partners-bottom-block {
+  width: 100%;
+  height: 402.48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Центруємо ряди іконок по вертикалі */
+  align-items: center; /* Центруємо ряди іконок по горизонталі */
+}
+
+.partners-row {
+  display: flex;
+  justify-content: center; /* Центруємо іконки в ряду */
+  align-items: center;
+  gap: 92px; /* Відстань між іконками в ряду */
+}
+
+.partners-bottom-block .partners-row .partner-icon > img {
+  /* Зробимо селектор більш специфічним */
+  width: 340px;
+  height: 104.61px;
+}
+/*____________________________________________________________________*/

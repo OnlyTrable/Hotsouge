@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
     <header>
@@ -312,13 +316,55 @@
             NY 10001,<br />
             USA
           </p>
-          <a
-            href="https://maps.app.goo.gl/h5iWj99y4YhpdGdt6"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="view-map-button"
-          >
+          <button id="view-map-button" class="view-map-button">
             View Map
+          </button>
+          <iframe
+            id="map-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.151736888262!2d-74.00335032337406!3d40.758687271386584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259d9db8e7311%3A0xb80b2365147cbd6d!2sNorth%20Javits!5e0!3m2!1sde!2sde!4v1745795506062!5m2!1sde!2sde"
+            width="600"
+            height="450"
+            style="border:0; position: absolute; top: 100%; left: 0; z-index: 10; display: none;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+    </section>
+    <section class="partners-section">
+      <div class="partners-top-block">
+        <p class="partners-intro-text">In partnership with</p>
+        <a href="https://contentsquare.com/" class="partner-link">
+          <img
+            src="assets/icons/contentsquare-logo.svg"
+            alt="Link to partners page contentsquare"
+          />
+        </a>
+      </div>
+      <div class="partners-bottom-block">
+        <div class="partners-row">
+          <a href="https://unbounce.com/" class="partner-icon partners-link">
+            <img src="assets/icons/unbounce-logo.svg" alt="unbounce logo" />
+          </a>
+          <a href="https://www.abtasty.com/" class="partner-icon partners-link">
+            <img src="assets/icons/ab-tasty-logo.svg" alt="ab tasty logo" />
+          </a>
+          <a
+            href="https://www.chilipiper.com/"
+            class="partner-icon partners-link"
+          >
+            <img
+              src="assets/icons/chili-piper-logo.svg"
+              alt="chili piper logo"
+            />
+          </a>
+        </div>
+        <div class="partners-row">
+          <a href="https://www.appcues.com/" class="partner-icon partners-link">
+            <img src="assets/icons/appcues-logo.svg" alt="appcues-logo" />
+          </a>
+          <a href="https://www.semrush.com/" class="partner-icon partners-link">
+            <img src="assets/icons/unbounce-logo-1.svg" alt="semrush logo" />
           </a>
         </div>
       </div>
@@ -327,4 +373,5 @@
   </body>
   <script src="scripts/index.js"></script>
   <script src="scripts/script.js"></script>
+  <script src="scripts/map.js"></script>
 </html>
